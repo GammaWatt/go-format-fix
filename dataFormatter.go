@@ -3,7 +3,6 @@ package dataFormatter
 import (
   "strconv"
   "reflect"
-  "strings"
 )
 
 func normalizeToUint64(x interface{}) uint64 {
