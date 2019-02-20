@@ -140,19 +140,6 @@ func normalizeDataType(x interface{}) string {
   }
 }
 
-func removeChar(x string, char byte) string {
-  return strings.Join(strings.Split(x, string(char)), "")
-}
-
-// Takes any chars found in string "chars" out of string "x"
-func RemoveCharsInString(x, chars string) string {
-  y := x
-  for i := range chars {
-    y = removeChar(y, byte(chars[i]))
-  }
-  return y
-}
-
 type formatterFunction func(string) string
 
 func Format(x interface{}, y formatterFunction) string {
