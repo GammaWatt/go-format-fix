@@ -1,4 +1,4 @@
-package dataFormatter
+package GoFormatFix
 
 import (
   "strconv"
